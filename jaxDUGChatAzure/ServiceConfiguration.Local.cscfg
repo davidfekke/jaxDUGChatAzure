@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="jaxDUGChatAzure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="JaxDUGChat">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="dfekke" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGGs6jxoKai9TYrUU6sy0oYwDQYJKoZIhvcNAQEBBQAEggEApX9dAjJgbb9Oi1Q7GC+NwevY9MUAvYDUDCZm+yPNkUy8XrtJI3UV/eB/YY4/tZFzAtPfqNbssgzoIqjwDCzFoWjEdfBHl71LlLh4HhDu3Hz4ZVOnf0HMWcYZ1Z+umPN6AeLUsqOW+r30Pt2GrIgmEmUbHO8sUJfx3wvsg9K0Sz2a2PwFEkofvIVOfNUfZls/+FI6uyGpuUi29EYGEtA+8EppEfxpP0ZKY01KtBDnYqLA7BcCb4raWKdyOV/2qjc03nYMvNGZ391qwep+x/Hs1dA3hm0VIJefn1Aj9I8BPFAt2v1C4PdlhhHBxAPnqQ70CtdnJ6JEtOh1/Djm5mMBJjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAsFYrQ1BvhAgBA+YFbDqrG4PqRMzbx0jheE" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-10-18T23:59:59.0000000-04:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="CFFF1F06CF4113259B2CF71939D4DB145977A81D" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
